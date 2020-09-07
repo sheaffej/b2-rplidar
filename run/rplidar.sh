@@ -19,6 +19,6 @@ docker run -d --rm \
 --env ROS_MASTER_URI \
 --mount type=bind,source=$PROJ_DIR/b2-rplidar/b2_rplidar,target=/ros/src/b2_rplidar \
 --mount type=bind,source=${DOWNLOADS_DIR},target=/root/Downloads \
-$DOCKER_IMAGE roslaunch rplidar_ros rplidar.launch frame_id:=scanner_link
+$DOCKER_IMAGE roslaunch b2_rplidar b2_rplidar.launch
 
 
